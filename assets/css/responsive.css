@@ -1,0 +1,230 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   Candidate: Kartik Vairagade
+   Breakpoints: Extra Large (1200px), Large (992px), Medium (768px), Small (576px)
+   ========================================================================== */
+
+/* --- Large Desktops & Laptops (max-width: 1199px) --- */
+@media (max-width: 1199.98px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-portrait-img {
+    height: 430px;
+  }
+  .section-title {
+    font-size: 2.15rem;
+  }
+}
+
+/* --- Tablets & Small Laptops (max-width: 991.98px) --- */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-top: 115px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-portrait-wrapper {
+    margin-top: 45px;
+  }
+
+  .hero-portrait-img {
+    height: 380px;
+  }
+
+  /* Floating badge repositioning on tablets */
+  .floating-badge-top {
+    right: 5px;
+    top: 15px;
+  }
+
+  .floating-badge-bottom {
+    left: 5px;
+    bottom: 15px;
+  }
+
+  /* Navigation drawer styling for mobile/tablet */
+  .navbar-collapse {
+    background: rgba(11, 16, 29, 0.96);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .navbar-nav {
+    margin-bottom: 15px;
+  }
+
+  .nav-link {
+    padding: 10px 16px !important;
+  }
+
+  /* About features grid */
+  .about-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education & Certifications dual column stacks to 1 column */
+  .edu-cert-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+
+/* --- Mobile Devices (max-width: 767.98px) --- */
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.35rem;
+  }
+
+  .hero-role {
+    font-size: 1.15rem;
+  }
+
+  .hero-role-code {
+    font-size: 1.05rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-portrait-img {
+    height: 330px;
+  }
+
+  .floating-badge {
+    padding: 6px 10px;
+  }
+  
+  .floating-badge-title {
+    font-size: 0.75rem;
+  }
+
+  .floating-badge-sub {
+    font-size: 0.68rem;
+  }
+
+  /* Experience Timeline on mobile */
+  .experience-timeline {
+    padding-left: 20px;
+  }
+
+  .experience-timeline::before {
+    left: 4px;
+  }
+
+  .timeline-marker {
+    left: -20px;
+    width: 14px;
+    height: 14px;
+    top: 24px;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+
+  .exp-role {
+    font-size: 1.2rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Quick facts strip */
+  .quick-facts-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px;
+  }
+
+  /* Skills grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-body {
+    padding: 22px;
+  }
+
+  .contact-form-card, .contact-info-card {
+    padding: 24px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* --- Extra Small Screens (max-width: 480px) --- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.05rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn-custom {
+    width: 100%;
+  }
+
+  .hero-portrait-card {
+    max-width: 300px;
+  }
+
+  .hero-portrait-img {
+    height: 300px;
+  }
+
+  .floating-badge {
+    display: none; /* Hide floating badges on very narrow phones to avoid clipping */
+  }
+
+  .toast-custom {
+    min-width: calc(100vw - 32px);
+    right: 16px;
+    bottom: 16px;
+  }
+}

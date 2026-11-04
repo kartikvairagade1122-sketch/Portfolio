@@ -1,0 +1,30 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.stackdump
+
+# Editor & IDE Directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+credentials.json
+secrets/
+
+# Temporary / Build Artifacts
+*.tmp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="480" fill="url(#bg)"/>
+  
+  <!-- Ambient Glow circles -->
+  <circle cx="680" cy="90" r="140" fill="#10b981" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="120" cy="380" r="160" fill="#06b6d4" opacity="0.07" filter="url(#glow)"/>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 45)">
+    <!-- Window Frame -->
+    <rect width="680" height="390" rx="14" fill="#0b1120" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Window Header / Titlebar -->
+    <rect width="680" height="44" rx="14" fill="#131c31"/>
+    <rect y="30" width="680" height="14" fill="#131c31"/>
+    <line x1="0" y1="44" x2="680" y2="44" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Window Dots -->
+    <circle cx="24" cy="22" r="5.5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5.5" fill="#f59e0b"/>
+    <circle cx="60" cy="22" r="5.5" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="95" y="10" width="450" height="24" rx="6" fill="#0a0f1d" stroke="#1e293b" stroke-width="1"/>
+    <text x="110" y="26" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">https://vendor-portal.local/registration</text>
+    
+    <!-- Badge inside url -->
+    <rect x="475" y="13" width="60" height="18" rx="4" fill="#10b981" opacity="0.2"/>
+    <text x="484" y="26" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold">SECURE SSL</text>
+
+    <!-- Main Content Area -->
+    <g transform="translate(30, 65)">
+      <!-- Left: Form Card -->
+      <rect width="360" height="300" rx="10" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+      
+      <!-- Form Header -->
+      <text x="24" y="36" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">Vendor Onboarding</text>
+      <text x="24" y="55" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Enter verified commercial details for registration</text>
+
+      <!-- Field 1: Company Name (Valid state) -->
+      <text x="24" y="85" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="600">COMPANY / VENDOR NAME</text>
+      <rect x="24" y="93" width="312" height="34" rx="6" fill="#090d16" stroke="#10b981" stroke-width="1.2"/>
+      <text x="36" y="115" fill="#f1f5f9" font-family="sans-serif" font-size="12">Apex Logistics Solutions Ltd.</text>
+      <circle cx="320" cy="110" r="7" fill="#10b981"/>
+      <path d="M 317 110 L 319 112 L 324 107" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+      <!-- Field 2: Business Email (Active state) -->
+      <text x="24" y="148" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="600">OFFICIAL BUSINESS EMAIL</text>
+      <rect x="24" y="156" width="312" height="34" rx="6" fill="#090d16" stroke="#38bdf8" stroke-width="1.2"/>
+      <text x="36" y="178" fill="#f1f5f9" font-family="sans-serif" font-size="12">vendor@apexlogistics.com</text>
+      <rect x="205" y="167" width="1.5" height="14" fill="#38bdf8"/>
+
+      <!-- Field 3: GST / Tax ID & Category (Grid) -->
+      <g transform="translate(24, 202)">
+        <text x="0" y="9" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="600">TAX / GSTIN</text>
+        <rect x="0" y="16" width="150" height="32" rx="6" fill="#090d16" stroke="#334155" stroke-width="1"/>
+        <text x="12" y="37" fill="#94a3b8" font-family="sans-serif" font-size="11">27AAAAA0000A1Z5</text>
+
+        <text x="162" y="9" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="600">CATEGORY</text>
+        <rect x="162" y="16" width="150" height="32" rx="6" fill="#090d16" stroke="#334155" stroke-width="1"/>
+        <text x="174" y="37" fill="#94a3b8" font-family="sans-serif" font-size="11">Wholesale Distr. ▾</text>
+      </g>
+
+      <!-- Submit Button -->
+      <rect x="24" y="260" width="312" height="30" rx="6" fill="url(#tealGrad)"/>
+      <text x="135" y="280" fill="#022c22" font-family="sans-serif" font-size="12" font-weight="bold">Submit &amp; Validate</text>
+
+      <!-- Right Column: Verification Stats Card -->
+      <g transform="translate(385, 0)">
+        <rect width="235" height="140" rx="10" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+        <text x="20" y="28" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="bold">Validation Integrity</text>
+        
+        <!-- Checklist items -->
+        <g transform="translate(20, 48)">
+          <circle cx="8" cy="8" r="6" fill="#10b981"/>
+          <path d="M 5 8 L 7 10 L 11 6" stroke="#ffffff" stroke-width="1.3" fill="none"/>
+          <text x="22" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="11">Client-side Regex Rules</text>
+        </g>
+        <g transform="translate(20, 75)">
+          <circle cx="8" cy="8" r="6" fill="#10b981"/>
+          <path d="M 5 8 L 7 10 L 11 6" stroke="#ffffff" stroke-width="1.3" fill="none"/>
+          <text x="22" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="11">Real-time Error Tooltips</text>
+        </g>
+        <g transform="translate(20, 102)">
+          <circle cx="8" cy="8" r="6" fill="#10b981"/>
+          <path d="M 5 8 L 7 10 L 11 6" stroke="#ffffff" stroke-width="1.3" fill="none"/>
+          <text x="22" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="11">Bootstrap Responsive Grid</text>
+        </g>
+
+        <!-- Lower Tech Pill Box -->
+        <g transform="translate(0, 155)">
+          <rect width="235" height="145" rx="10" fill="#090f1d" stroke="#1e293b" stroke-width="1"/>
+          <text x="20" y="28" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">// STACK HIGHLIGHTS</text>
+          
+          <rect x="20" y="44" width="85" height="24" rx="4" fill="#1e293b"/>
+          <text x="32" y="60" fill="#e2e8f0" font-family="sans-serif" font-size="11">HTML5</text>
+
+          <rect x="115" y="44" width="80" height="24" rx="4" fill="#1e293b"/>
+          <text x="127" y="60" fill="#e2e8f0" font-family="sans-serif" font-size="11">CSS3</text>
+
+          <rect x="20" y="78" width="95" height="24" rx="4" fill="#1e293b"/>
+          <text x="30" y="94" fill="#facc15" font-family="sans-serif" font-size="11">JavaScript</text>
+
+          <rect x="125" y="78" width="90" height="24" rx="4" fill="#1e293b"/>
+          <text x="135" y="94" fill="#a855f7" font-family="sans-serif" font-size="11">Bootstrap</text>
+
+          <text x="20" y="126" fill="#64748b" font-family="sans-serif" font-size="10">Engineered for robust intake</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
